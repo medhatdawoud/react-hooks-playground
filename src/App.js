@@ -1,26 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react'
 
-export default class App extends Component {
-  constructor(props) {
-    super(props);
+export default function App () {
+  const [counter, setCounter] = React.useState(0)
 
-    this.state = {
-      counter: 0
-    };
-  }
-
-  countUp = () => {
-    this.setState({ counter: ++this.state.counter });
-  };
-
-  render() {
-    return (
-      <div>
-        <button onClick={this.countUp}>Count up</button>
-        <div style={{ fontSize: '50px', textAlign: 'center' }}>
-          {this.state.counter}
-        </div>
-      </div>
-    );
-  }
+  return (
+    <div className="container text-center pt-5">
+      <button
+        className="btn btn-primary"
+        onClick={() => setCounter(c => c + 1)}
+      >
+        Count up
+      </button>
+      <h1 className="mt-3">{counter}</h1>
+    </div>
+  )
 }
