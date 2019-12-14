@@ -9,12 +9,17 @@ export default class App extends Component {
       title: '',
     };
 
+    this.amount = React.createRef();
+
     this.countUp = this.countUp.bind(this);
     this.handleTitle = this.handleTitle.bind(this);
   }
 
   componentDidMount() {
     console.log('mounted');
+    console.log(this.amount.current);
+
+    this.amount.current.focus()
   }
 
   componentDidUpdate() {
@@ -35,10 +40,16 @@ export default class App extends Component {
   render() {
     return (
       <div className="container text-center pt-5">
-        <button className="btn btn-primary" onClick={this.countUp}>
+        <input ref={this.amount} />
+        <br/>
+        <button
+          className="btn btn-primary mt-3"
+          onClick={this.countUp}
+        >
           Count up
         </button>
-        <button className="btn btn-primary" onClick={this.handleTitle}>
+        <br/>
+        <button className="btn btn-primary mt-3" onClick={this.handleTitle}>
           change Title
         </button>
         <h1 className="mt-3">{this.state.counter}</h1>
