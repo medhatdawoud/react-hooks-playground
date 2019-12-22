@@ -1,10 +1,13 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { Button } from './Button';
 
 export default function App() {
   const [counter, setCounter] = useState(0);
   const [title, setTitle] = useState('');
   const amountRef = useRef();
   const reactMaxRef = useRef(false);
+
+  const listOfCount = [1, 4, 6, 10, 50];
 
   const handleCounter = () => {
     if (!reactMaxRef.current) {
@@ -18,7 +21,7 @@ export default function App() {
   const handelTitle = () => setTitle('semiColon academy');
 
   useEffect(() => {
-    console.log('inside useEffect 1');
+    // console.log('inside useEffect 1');
     document.title = title;
 
     return () => {
@@ -30,7 +33,7 @@ export default function App() {
   }, [title]);
 
   useEffect(() => {
-    console.log('inside useEffect 2');
+    // console.log('inside useEffect 2');
     document.title = `You have clicked ${counter} times`;
   }, [counter]);
 
@@ -38,13 +41,16 @@ export default function App() {
     amountRef.current.focus();
   });
 
+  const onClick = useCallback((n) => setCounter((c) => c + n), [setCounter]);
+
   return (
     <div className="container text-center pt-5">
       <input ref={amountRef} />
       <br />
-      <button className="btn btn-primary mt-3" onClick={handleCounter}>
-        Count up
-      </button>
+      {listOfCount.map((count) => (
+        <Button counterFn={onClick} label={count} n={count} key={count} />
+      ))}
+      <Button counterFn={onClick} label="count up" n={1} />
       <br />
       <button className="btn btn-primary mt-3" onClick={handelTitle}>
         Change title
