@@ -22,6 +22,7 @@
     "space-before-function-paren":"off",
     "no-extra-semi": "off",
     "semi": "off",
-    "comma-dangle":"off"
+    "comma-dangle":"off",
+    "react/display-name":"off"
   }
 }
