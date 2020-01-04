@@ -1,6 +1,5 @@
 import React, { useState, useLayoutEffect, useRef, useCallback } from 'react';
 import { Button } from './Button';
-import { UseLayoutEffectEx } from './UseLayoutEffectEx';
 
 export default function App() {
   const [counter, setCounter] = useState(0);
@@ -23,19 +22,17 @@ export default function App() {
     <div className="container text-center pt-5">
       <Button label="add more" onClick={handleAddButtons} />
       <div ref={divRef}>
-        {listOfCount.map((count) => (
-          <>
-            <Button counterFn={onClick} label={count} n={count} key={count} />
+        {listOfCount.map((count, idx) => (
+          <div key={count * idx}>
+            <Button onClick={onClick} label={count} n={count} />
             <br />
-          </>
+          </div>
         ))}
       </div>
       <h1 className="mt-3">{counter}</h1>
-      {/* <pre style={{ textAlign: 'left' }}>
+      <pre style={{ textAlign: 'left' }}>
         {JSON.stringify(divData, null, 2)}
-      </pre> */}
-
-      <UseLayoutEffectEx />
+      </pre>
     </div>
   );
 }
