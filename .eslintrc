@@ -23,6 +23,7 @@
     "no-extra-semi": "off",
     "semi": "off",
     "comma-dangle":"off",
-    "react/display-name":"off"
+    "react/display-name":"off",
+    "react/prop-types":"off"
   }
 }
