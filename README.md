@@ -9,3 +9,4 @@ This project is the playground of a series on [YouTube](https://www.youtube.com/
 3. useEffect explained. ( [Video](https://www.youtube.com/watch?v=C8B0-Npmo_c), [Code](https://github.com/medhatdawoud/react-hooks-playground/tree/2c840371389fced59762944bd249f87430825cc8/src) )
 4. useRef explained ( [Video](https://www.youtube.com/watch?v=-df8TooNQvQ), [Code](https://github.com/medhatdawoud/react-hooks-playground/tree/dd2441f381a27266aa2bef0967e8355ee7aee923) )
 5. useCallback explained ( [Video](https://www.youtube.com/watch?v=9kVMxncG-tU), [Code](https://github.com/medhatdawoud/react-hooks-playground/tree/e0d0301559973b99ba36415fbbaa313a6590a910) )
+6. useLayoutEffect explained ( [Video](https://www.youtube.com/watch?v=AExu1ue-EaE), [Code]() )
