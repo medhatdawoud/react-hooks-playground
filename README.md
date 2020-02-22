@@ -10,3 +10,7 @@ This project is the playground of a series on [YouTube](https://www.youtube.com/
 4. useRef explained ( [Video](https://www.youtube.com/watch?v=-df8TooNQvQ), [Code](https://github.com/medhatdawoud/react-hooks-playground/tree/dd2441f381a27266aa2bef0967e8355ee7aee923) )
 5. useCallback explained ( [Video](https://www.youtube.com/watch?v=9kVMxncG-tU), [Code](https://github.com/medhatdawoud/react-hooks-playground/tree/e0d0301559973b99ba36415fbbaa313a6590a910) )
 6. useLayoutEffect explained ( [Video](https://www.youtube.com/watch?v=AExu1ue-EaE), [Code]() )
+7. useReducer explained ( [Video](https://www.youtube.com/watch?v=tYRB7RXwJjU&list=PLANjs1H0YEnRE78sLw6vd_4LXoPg5enIM), [Code]() )
+8. useMemo explained ( [Video](https://www.youtube.com/watch?v=XgfXqaERdiE&list=PLANjs1H0YEnRE78sLw6vd_4LXoPg5enIM), [Code]() )
+9. useContext explained ( [Video](https://www.youtube.com/watch?v=5PIf-O3TxuE&list=PLANjs1H0YEnRE78sLw6vd_4LXoPg5enIM), [Code]() )
+10. All in one episode ( [Video](https://www.youtube.com/watch?v=04p1xFZKdqI&list=PLANjs1H0YEnRE78sLw6vd_4LXoPg5enIM), [Code]() )
